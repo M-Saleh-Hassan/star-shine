@@ -1,6 +1,9 @@
 header {
-  position: relative;
+  position: fixed;
   box-shadow: 0 0 12px rgba($black, 0.1);
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000 ;
   .lang-switch {
     position: relative;
@@ -73,7 +76,7 @@ header {
             font-size: 18px;
             transition: 0.3s;
             &:hover {
-              color: $bgLight;
+              color: rgba($black, 0.5);
             }
           }
         }
@@ -124,55 +127,64 @@ header {
           }
         }
       }
-      ul {
+      .menu-container {
         position: fixed;
-        background-color: $bgDark;
         top: 0;
+        left: 0;
         right: 0;
-        width: 250px;
-        height: 100%;
-        padding: 25px;
-        text-align: right;
-        transition: 0.3s linear;
-        transform: translateX(500px);
-        @media(max-width:576px) {
-          width: 180px;
-        }
-        &::before {
-          content: '';
+        bottom: 0;
+        background-color: rgba($black, 0.5);
+        display: none;
+        ul {
           position: absolute;
-          top: 0;
-          left: -100px;
-          width: 200px;
-          height: 100%;
           background-color: $bgDark;
-          transform: skew(10deg);
-        }
-        .close {
-          display: inline-block;
-          position: absolute;
-          top: 40px;
-          left: -100px;
-          color: $white;
-          font-size: 26px;
-          cursor: pointer;
-        }
-        li {
-          margin: 10px 0;
-          &:first-child {
-            margin-top: 0;
+          top: 0;
+          right: 0;
+          width: 250px;
+          height: 100%;
+          padding: 25px;
+          text-align: right;
+          transition: 0.3s linear;
+          transform: translateX(500px);
+          @media(max-width:576px) {
+            width: 180px;
           }
-          a {
-            position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100px;
+            width: 200px;
+            height: 100%;
+            background-color: $bgDark;
+            transform: skew(10deg);
+          }
+          .close {
             display: inline-block;
-            text-decoration: none;
+            position: absolute;
+            top: 40px;
+            left: -100px;
             color: $white;
-            padding: 5px 12px;
-            font-size: 18px;
-            transition: 0.3s;
-            &:hover {
-              background-color: $white;
-              color: $black;
+            font-size: 26px;
+            cursor: pointer;
+          }
+          li {
+            margin: 10px 0;
+            &:first-child {
+              margin-top: 0;
+            }
+            a {
+              position: relative;
+              display: inline-block;
+              text-decoration: none;
+              color: $white;
+              padding: 5px 12px;
+              font-size: 18px;
+              transition: 0.3s;
+              &:hover {
+                background-color: $white;
+                color: $black;
+              }
             }
           }
         }

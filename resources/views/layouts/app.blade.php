@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="{{asset('/css/normalize.css')}}">
   <!-- link bootstrap -->
   <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
+  <!-- link Skitter -->
+  <link rel="stylesheet" href="{{asset('/css/skitter.css')}}">
   <!-- link Owl carousel, Owl theme -->
   <link rel="stylesheet" href="{{asset('/css/owl.carousel.min.css')}}">
   <link rel="stylesheet" href="{{asset('/css/owl.theme.default.min.css')}}">
@@ -66,19 +68,19 @@
   
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="{{url('home')}}">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="{{url('about')}}">About</a>
           </li>
           <li>
-            <a href="#">Our work</a>
+            <a href="{{url('services')}}">Services</a>
           </li>
           <li>
-            <a href="#">Gallery</a>
+            <a href="{{url('gallery')}}">Gallery</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="{{url('projects')}}">Our Work</a>
           </li>
           <li>
             <div class="lang-switch">
@@ -104,30 +106,33 @@
         <div class="toggler">
           <span class="toggler-btn"></span>
         </div>
-        <ul>
-          <span class="close">
-            <i class="fas fa-times"></i>
-          </span>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Our work</a>
-          </li>
-          <li>
-            <a href="#">Gallery</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+        <div class="menu-container">
+          <ul>
+            <span class="close">
+              <i class="fas fa-times"></i>
+            </span>
+            <li>
+              <a href="{{url('home')}}">Home</a>
+            </li>
+            <li>
+              <a href="{{url('about')}}">About</a>
+            </li>
+            <li>
+              <a href="{{url('services')}}">Our Programs</a>
+            </li>
+            <li>
+              <a href="{{url('gallery')}}">Gallery</a>
+            </li>
+            <li>
+              <a href="{{url('projects')}}">Our Work</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
+  @yield('pageHeader')
   @yield('pageContent')
 
   <!-- Footer -->
@@ -200,12 +205,15 @@
 
   <!-- jQuery -->
   <script src="{{asset('/js/jquery-3.4.1.js')}}"></script>
+  <script src="{{asset('/js/jquery.easing.1.3.js')}}"></script>
   <!-- Popper -->
   <script src="{{asset('/js/popper.min.js')}}"></script>
   <!-- Bootstrap -->
   <script src="{{asset('/js/bootstrap.min.js')}}"></script>
   <!-- link Owl carousel -->
   <script src="{{asset('/js/owl.carousel.min.js')}}"></script>
+  <!-- Link Skitter Slider -->
+  <script src="{{asset('/js/jquery.skitter.min.js')}}"></script>
   <!-- main -->
   <script src="{{asset('/js/app.js')}}"></script>
 </body>

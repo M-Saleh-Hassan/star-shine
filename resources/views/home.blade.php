@@ -29,7 +29,7 @@
   </section>
 
   <div class="sponsors">
-    <div class="owl-carousel">
+    <div class="owl-carousel owl-sponsors">
       <div>
         <img loading="lazy" src="{{asset('/images/47-min.png')}}" alt="">
       </div>
@@ -132,7 +132,7 @@
         </div>
       </div>
       <div class="text-center my-3">
-        <a href="#" class="all-btn">All Images</a>
+        <a href="#" class="all-btn">Go to Gallery</a>
       </div>
     </div>
   </section>

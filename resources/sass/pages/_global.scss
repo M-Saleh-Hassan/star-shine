@@ -16,6 +16,18 @@ ul {
     margin: 0;
 }
 
+.md-none {
+  @media (max-width:768px) {
+    display: none;
+  }
+}
+
+.lg-none {
+  @media (max-width:992px) {
+    display: none;
+  }
+}
+
 .up-btn {
   position: fixed;
   bottom: 40px;
