@@ -1,7 +1,7 @@
 .more-btn {
   display: inline-block;
   border: none;
-  background-color: $bgDark;
+  background-color: $mainColor;
   color: $white;
   border: 1px solid rgba($white, 0.5);
   padding: 4px 22px;
@@ -21,10 +21,10 @@
   font-size: 18px;
   border-radius: 2px;
   outline: none !important;
-  background-color: $green;
+  background-color: $secColor;
   color: $white !important;
   transition: 0.3s;
   &:hover {
-    background-color: $darkGreen;
+    background-color: $secColorDarker;
   }
 }

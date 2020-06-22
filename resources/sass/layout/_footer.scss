@@ -1,5 +1,5 @@
 footer {
-  background-color: #122030;
+  background-color: #011426;
   padding: 30px 0;
   color: $white;
   li {
@@ -17,7 +17,7 @@ footer {
         content: '';
         position: absolute;
         top: 50%;
-        left: -10px;
+        #{$left}: -10px;
         width: 7px;
         height: 1px;
         background-color: $white;
@@ -38,8 +38,8 @@ footer {
   }
   .info {
     li span {
-      color: $green;
-      margin-right: 5px;
+      color: $secColor;
+      margin-#{$right}: 5px;
     }
   }
 }

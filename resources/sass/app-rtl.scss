@@ -1,0 +1,26 @@
+
+
+* {
+  direction: rtl;
+}
+
+/*  Import helpers  */
+@import './helpers/variables-rtl';
+@import './helpers/placeholders';
+@import './helpers/mixins';
+@import './pages/global';
+
+/*  Import header  */
+@import './layout/header';
+
+/*  Import components  */
+@import './components/buttons';
+@import './components/headings';
+
+/*  Import pages  */
+@import './pages/home';
+@import './pages/about';
+@import './pages/gallery';
+
+/*  Import footer  */
+@import './layout/footer';

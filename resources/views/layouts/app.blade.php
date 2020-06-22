@@ -63,24 +63,24 @@
     <nav class="lg-navbar">
       <div class="container">
         <div class="logo">
-          <img src="{{asset('/images/SSTlogo-min.png')}}" alt="">
+          <img src="{{asset('/images/2.png')}}" alt="">
         </div>
   
         <ul>
           <li>
-            <a href="{{url('home')}}">Home</a>
+            <a class="nav-link" href="{{url('/')}}">Home</a>
           </li>
           <li>
-            <a href="{{url('about')}}">About</a>
+            <a class="nav-link" href="{{url('about')}}">About</a>
           </li>
           <li>
-            <a href="{{url('services')}}">Services</a>
+            <a class="nav-link" href="{{url('services')}}">Services</a>
           </li>
           <li>
-            <a href="{{url('gallery')}}">Gallery</a>
+            <a class="nav-link" href="{{url('gallery')}}">Gallery</a>
           </li>
           <li>
-            <a href="{{url('projects')}}">Our Work</a>
+            <a class="nav-link" href="{{url('projects')}}">Our Work</a>
           </li>
           <li>
             <div class="lang-switch">
@@ -112,19 +112,19 @@
               <i class="fas fa-times"></i>
             </span>
             <li>
-              <a href="{{url('home')}}">Home</a>
+              <a class="nav-link active" href="{{url('/')}}">Home</a>
             </li>
             <li>
-              <a href="{{url('about')}}">About</a>
+              <a class="nav-link" href="{{url('about')}}">About</a>
             </li>
             <li>
-              <a href="{{url('services')}}">Our Programs</a>
+              <a class="nav-link" href="{{url('services')}}">Our Programs</a>
             </li>
             <li>
-              <a href="{{url('gallery')}}">Gallery</a>
+              <a class="nav-link" href="{{url('gallery')}}">Gallery</a>
             </li>
             <li>
-              <a href="{{url('projects')}}">Our Work</a>
+              <a class="nav-link" href="{{url('projects')}}">Our Work</a>
             </li>
           </ul>
         </div>

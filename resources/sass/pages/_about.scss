@@ -1,4 +1,4 @@
-.about-page {
+.about-header {
   border-bottom: 1px solid #efefef;
   .about-comp {
     border-radius: 2px;
@@ -17,10 +17,6 @@
   }
 } 
 
-
-
-
-
 .skitter {
   border-radius: 2px;
   overflow: hidden;
@@ -33,9 +29,61 @@
     }
   }
   .prev_button {
-    left: 15px;
+    #{$left}: 15px;
   }
   .next_button {
-    right: 15px;
+    #{$right}: 15px;
+  }
+}
+
+.video-section {
+  background-color: #f8f8f8;
+  @media(min-width: 575px) {
+    padding: 50px;
+  }
+  @media(min-width: 991px) {
+    padding: 50px 175px;
+  }
+  video {
+    width: 100%;
+    outline: none !important;
+    box-shadow: 0 0 20px rgba($black, 0.1);
+  }
+}
+
+.tabs-info {
+  padding: 40px 0;
+  background-color: #f6f6f6;
+  .nav-link {
+    position: relative;
+    padding: 6px 10px;
+    margin: 5px 0;
+    background-color: transparent !important;
+    color: #212529 !important;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 4px;
+    &:hover {
+      background-color: $white !important;
+    }
+    &.active {
+      background-color: $white !important;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        #{$left}: 0;
+        width: 4px;
+        background-color: $mainColor;
+      }
+    }
+  }
+  .tab-pane {
+    padding-top: 8px;
+    p {
+      color: #787878;
+      line-height: 1.7;
+    }
   }
 }

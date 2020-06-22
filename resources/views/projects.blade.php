@@ -15,7 +15,7 @@
           <div class="project flip-card">
             <div class="inner">
               <div class="front">
-                <img loading="lazy" src="{{asset('/images/p-min.png')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://via.placeholder.com/300.png/bbb/fff" class="img-fluid" alt="">
               </div>
               <div class="back">
                 <h4>Dummy Title</h4>
@@ -34,6 +34,18 @@
               <div class="modal-body">
                 <h3>Project Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptatem harum minus minima officiis exercitationem numquam quam incidunt, rem similique nostrum unde odit nobis quo impedit fugit nulla facere, porro iure autem praesentium voluptas corrupti sequi. Beatae voluptatem molestias, laboriosam rem quidem omnis illo ex necessitatibus eum accusantium quod culpa quam autem quasi? Incidunt, dignissimos. Perferendis quisquam, facilis dolor praesentium amet natus in porro voluptatum. Doloremque, tempora, iusto earum deserunt corrupti, in laborum eaque ipsa repellat fuga voluptatem harum accusantium.</p>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="img-container">
+                      <img class="img-fluid" src="https://via.placeholder.com/350.png/bbb/fff">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="img-container">
+                      <img class="img-fluid" src="https://via.placeholder.com/350.png/bbb/fff">
+                    </div>
+                  </div>
+                </div>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>

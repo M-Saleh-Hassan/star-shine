@@ -12,7 +12,7 @@ a {
 
 ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -31,7 +31,7 @@ ul {
 .up-btn {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  #{$right}: 40px;
   text-decoration: none !important;
   border: none;
   color: $black !important;

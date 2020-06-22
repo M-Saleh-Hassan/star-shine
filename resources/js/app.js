@@ -1,5 +1,27 @@
 
 $(document).ready(function(){
+
+
+  /* Adding active class to nav-link */
+  function addActiveLink () {
+    let navLinks = document.querySelectorAll('header .lg-navbar .nav-link'),
+        pageUrl = window.location.href,
+        activeLinks = [],
+        i;
+
+    for (i = 0; i < navLinks.length; i++) {
+      let linkHref = navLinks[i].getAttribute('href');
+      navLinks[i].classList.remove('active')
+      if ( pageUrl.includes(linkHref) ) {
+        activeLinks.push(navLinks[i]);
+      }
+    }
+    activeLinks[activeLinks.length - 1].classList.add('active');
+  }
+
+  addActiveLink();
+
+
   /* Owl carousel fire function */
   let owl = $(".owl-gallery");
 
@@ -55,6 +77,11 @@ $(document).ready(function(){
   });
 
 });
+
+
+/* Set page title margin-top */
+let headerHeight = $('header').outerHeight();
+$('.page-title').css('marginTop', `${headerHeight}px`)
 
 
 /* toggle language menu */

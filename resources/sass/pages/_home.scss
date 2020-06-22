@@ -54,14 +54,14 @@
       position: relative;
       padding: 15px;
       border-radius: 50%;
-      margin-right: 15px;
+      margin-#{$right}: 15px;
       @include flexCenter();
-      background-color: $green;
+      background-color: $secColor;
       &:before {
         content: '';
         position: absolute;
         top: 8%;
-        left: 8%;
+        #{$left}: 8%;
         width: 84%;
         height: 84%;
         border: 2px dotted $white;
@@ -110,7 +110,7 @@
         }
       }
       .back {
-        background-color: $bgDark;
+        background-color: $mainColor;
         padding: 15px;
         color: $white;
         transform: rotateY(180deg);
@@ -121,8 +121,16 @@
     }
   }
   .modal {
+    .modal-dialog {
+      @media (min-width: 768px) {
+        max-width: 680px;
+      }
+      @media (min-width: 992px) {
+        max-width: 900px;
+      }
+    }
     .modal-body {
-      padding: 30px;
+      padding: 20px;
       img {
         margin-bottom: 15px;
       }
@@ -130,7 +138,7 @@
     .close {
       position: absolute;
       top: 20px;
-      right: 25px;
+      #{$right}: 25px;
       outline: none !important;
     }
   }
@@ -139,10 +147,10 @@
       content: '';
       position: absolute;
       top: 25%;
-      right: 0;
-      left: 0;
+      #{$right}: 0;
+      #{$left}: 0;
       height: 50%;
-      background-color: #1f3349;
+      background-color: $mainColor;
       transform: rotate(-45deg);
     }
   }
@@ -163,7 +171,7 @@
         content: '';
         position: absolute;
         top: 0;
-        left: 0;
+        #{$left}: 0;
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.15);
@@ -189,7 +197,7 @@
           height: 100%;
         }
         &:first-child {
-          margin-right: auto;
+          margin-#{$right}: auto;
         }
       }
     }
@@ -244,10 +252,10 @@
     }
     &:hover span {
       color: $white;
-      background-color: $green;
+      background-color: $secColor;
     }
     &:hover h4 {
-      color: $green;
+      color: $secColor;
     }
   }
 }
@@ -259,7 +267,7 @@
   }
   .form-container {
     color: $white;
-    background-color: $bgDark;
+    background-image: linear-gradient(100deg,$mainColorDarker 9%, $mainColor 100%) !important;
     .form {
       width: 85%;
       margin: auto;
@@ -268,7 +276,7 @@
       }
       .err {
         margin-top: 5px;
-        padding-left: 10px;
+        padding-#{$left}: 10px;
         font-size: 12px;
         color: #c00;
         display: none;
@@ -292,7 +300,7 @@
       padding: 15px 25px;
       border-radius: 2px;
       .h4 {
-        color: $bgDark;
+        color: $mainColor;
       }
       ul {
         margin-bottom: 15px;
@@ -380,7 +388,7 @@
 //   position: relative;
 //   width: 798px;
 //   list-style: none;
-//   left: 0;
+//   #{$left}: 0;
 //   top: 0;
 //   margin: -20px 0 0 -20px;
 //   padding: 0;
@@ -390,7 +398,7 @@
 // .rotatescroll .overview li {
 //   height: 342px;
 //   width: 342px;
-//   float: left;
+//   float: #{$left};
 //   position: relative;
 //   padding: 15px;
 //   margin: 4px 0 0 4px;
@@ -399,7 +407,7 @@
 // .rotatescroll .overlay {
 //   pointer-events: none;
 //   position: absolute;
-//   left: 0;
+//   #{$left}: 0;
 //   top: 0;
 //   height: 390px;
 //   width: 390px;
@@ -453,8 +461,8 @@
 //   position: absolute;
 //   top: -3px;
 //   cursor: pointer;
-//   /* left: 137px; */ 
-//   left: 200px;
+//   /* #{$left}: 137px; */ 
+//   #{$left}: 200px;
 //   width: 24px;
 //   height: 24px;
 //   z-index: 200;
@@ -464,7 +472,7 @@
 // }
 
 // .rotatescroll .dot {
-//   left: inherit !important;
+//   #{$left}: inherit !important;
 //   top: 0 !important;
 //   z-index: 100;
 //   text-align: center;
@@ -486,8 +494,8 @@
 //   content: '';
 //   position: absolute;
 //   top: 2px;
-//   left: 0;
-//   border-left: 2px solid #40b590;
+//   #{$left}: 0;
+//   border-#{$left}: 2px solid #40b590;
 //   height: 42px;
 //   /* display: table-cell; */
 // }
@@ -537,7 +545,7 @@
 
 // .rotatescroll .dot h1 {
 //   position: absolute;
-//   left: -100%;
+//   #{$left}: -100%;
 //   width: 200%;
 //   height: 200%;
 //   transform: skewY(45deg) rotate(22.5deg);

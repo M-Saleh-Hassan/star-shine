@@ -94,7 +94,28 @@
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
+  /* Adding active class to nav-link */
+  function addActiveLink() {
+    var navLinks = document.querySelectorAll('header .lg-navbar .nav-link'),
+        pageUrl = window.location.href,
+        activeLinks = [],
+        i;
+
+    for (i = 0; i < navLinks.length; i++) {
+      var linkHref = navLinks[i].getAttribute('href');
+      navLinks[i].classList.remove('active');
+
+      if (pageUrl.includes(linkHref)) {
+        activeLinks.push(navLinks[i]);
+      }
+    }
+
+    activeLinks[activeLinks.length - 1].classList.add('active');
+  }
+
+  addActiveLink();
   /* Owl carousel fire function */
+
   var owl = $(".owl-gallery");
   $(".owl-sponsors").owlCarousel({
     items: 4,
@@ -144,6 +165,10 @@ $(document).ready(function () {
     }
   });
 });
+/* Set page title margin-top */
+
+var headerHeight = $('header').outerHeight();
+$('.page-title').css('marginTop', "".concat(headerHeight, "px"));
 /* toggle language menu */
 
 $('.lang-switch .current-lang').click(function (e) {
@@ -252,6 +277,17 @@ $('.carousel-modal').click(function (e) {
 
 /***/ }),
 
+/***/ "./resources/sass/app-rtl.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/app-rtl.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -264,14 +300,15 @@ $('.carousel-modal').click(function (e) {
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!*******************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/app-rtl.scss ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\star-shine\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\star-shine\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\star-shine\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\star-shine\resources\sass\app-rtl.scss */"./resources/sass/app-rtl.scss");
 
 
 /***/ })

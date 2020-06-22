@@ -1,13 +1,12 @@
 .our-gallery {
   padding: 8px;
-  background-color: #222;
-  border: 1px solid rgba(255,255,255,0.6);
+  background-color: #fafafa;
   .grid-container {
     position: relative;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 225px;
+    grid-auto-rows: 250px;
     grid-gap: 8px;
     grid-auto-flow: dense;
     .box {
@@ -21,24 +20,27 @@
       &.box_7 {
         grid-column: span 2;
       }
-      .box_1 {
+      &.box_1 {
         @media (max-width: 992px) {
           grid-column: span 2 !important;
         }
       }
-      .box_2, .box_3 {
+      &.box_2, 
+      &.box_3 {
         @media (max-width: 992px) {
           grid-column: span 2 !important;
           grid-row: span 1 !important;
         }
       }
-      .box_4, .box_5 {
+      &.box_4, 
+      &.box_5 {
         @media (max-width: 992px) {
           grid-row: span 1 !important;
           grid-column: span 4 !important;
         }
       }
-      .box_6, .box_7 {
+      &.box_6, 
+      &.box_7 {
         @media (max-width: 992px) {
           grid-row: span 1 !important;
           grid-column: span 2 !important;
@@ -52,7 +54,7 @@
         &::before {
           content: '';
           @include overlay();
-          background-color: rgba($black, 0.4);
+          background-color: rgba($black, 0.5);
           opacity: 0;
           transition: 0.4s;
         }
@@ -60,7 +62,7 @@
           content: '';
           position: absolute;
           top: 0;
-          left: -120%;
+          #{$left}: -120%;
           width: 100%;
           height: 100%;
           background-image: linear-gradient(transparent, rgba($white, 0.2), transparent);
@@ -84,14 +86,14 @@
     opacity: 0;
   }
   .grid-container .img-container:hover::after {
-    left: 120%
+    #{$left}: 120%
   }
 
   .carousel-modal {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    #{$left}: 0;
+    #{$right}: 0;
     bottom: 0;
     background-color: rgba($black, 0.85);
     transition: 0.2s ease;
@@ -104,7 +106,7 @@
       display: inline-block;
       position: absolute;
       top: 40px;
-      right: 50px;
+      #{$right}: 50px;
       color: $white;
       font-size: 26px;
       cursor: pointer;
@@ -155,14 +157,14 @@
         }
       }
       .owl-prev {
-        left: -60px;
+        #{$left}: -60px;
       }
       .owl-next {
-        right: -60px;
+        #{$right}: -60px;
       }
       .owl-dots {
         position: absolute;
-        left: 0;
+        #{$left}: 0;
         text-align: center;
         width: 100%;
         .owl-dot {

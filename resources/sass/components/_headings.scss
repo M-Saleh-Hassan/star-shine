@@ -6,16 +6,17 @@
 
 .page-title {
   position: relative;
-  margin-top: 63px;
+  // margin-top: 57px;
   height: 300px;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   .overlay {
     position: absolute;
     top: 0;
-    left: 0;
+    #{$left}: 0;
     width: 100%;
     height: 100%;
-    // background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.1);
     @include flexCenter();
     h2 {
       color: $white;
@@ -23,7 +24,7 @@
   }
   .path {
     position: absolute;
-    left: 0;
+    #{$left}: 0;
     bottom: 0;
     width: 100%;
     background-color: rgba(0,0,0, 0.8);
