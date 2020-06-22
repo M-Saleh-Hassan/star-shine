@@ -35,11 +35,11 @@
           <i class="far fa-clock"></i> 7am - 11pm
           </li>
         </ul>
-  
+
         <ul>
           <li>
             <i class="fab fa-facebook-f"></i>
-          </li>      
+          </li>
           <li>
             <i class="fab fa-twitter"></i>
           </li>
@@ -65,10 +65,10 @@
         <div class="logo">
           <img src="{{asset('/images/SSTlogo-min.png')}}" alt="">
         </div>
-  
+
         <ul>
           <li>
-            <a href="{{url('home')}}">Home</a>
+            <a href="{{url('')}}">Home</a>
           </li>
           <li>
             <a href="{{url('about')}}">About</a>
@@ -197,7 +197,7 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   </footer>
 
 
@@ -225,8 +225,8 @@
 
 
 
-<!-- 
-  FontAwesome 
+<!--
+  FontAwesome
 <i class="fas fa-phone"></i>
 <i class="fas fa-envelope-open"></i>
 <i class="fas fa-map-marker-alt"></i>
