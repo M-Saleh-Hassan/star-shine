@@ -14,7 +14,7 @@
       <div class="container">
         <ul>
           <li>
-            <a href="/">
+            <a href="{{url('')}}">
               <i class="fas fa-home"></i>
             </a>
             <i class="far fa-hand-point-right"></i>

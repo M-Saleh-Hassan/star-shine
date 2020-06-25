@@ -19,7 +19,7 @@ header {
       #{$left}: 50%;
       transform: translateX(-50%);
       min-width: 100%;
-      background-color: $secColorDarker;
+      background-color: $mainColorLighter;
       z-index: 5;
       box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
       display: none;

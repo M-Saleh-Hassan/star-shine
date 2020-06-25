@@ -153,7 +153,7 @@ header .lang-switch .sub-menu {
   left: 50%;
   transform: translateX(-50%);
   min-width: 100%;
-  background-color: #0f9648;
+  background-color: #377fc3;
   z-index: 5;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
   display: none;
@@ -382,19 +382,19 @@ header .sm-navbar .container .menu-container ul li a:hover {
 
 .more-btn {
   display: inline-block;
-  border: none;
-  background-color: #054c8f;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  color: #054c8f;
+  border: 2px solid #054c8f;
+  border-radius: 4px;
+  font-weight: 600;
   padding: 4px 22px;
   outline: none !important;
   transition: 0.3s;
 }
 
 .more-btn:hover {
-  background-color: #fff;
-  color: #212529;
-  border-color: transparent;
+  background-color: #054c8f;
+  color: #fff;
 }
 
 .all-btn {
@@ -404,13 +404,17 @@ header .sm-navbar .container .menu-container ul li a:hover {
   font-size: 18px;
   border-radius: 2px;
   outline: none !important;
-  background-color: #28af60;
+  background-image: linear-gradient(to right, #054c8f 0%, #377fc3 48%, #054c8f 100%);
+  background-size: 200% auto;
+  background-position: right center;
+  box-shadow: 2px 2px 8px rgba(33, 37, 41, 0.3);
   color: #fff !important;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .all-btn:hover {
-  background-color: #0f9648;
+  background-position: initial;
+  box-shadow: none;
 }
 
 .sec-heading {
@@ -549,6 +553,10 @@ header .sm-navbar .container .menu-container ul li a:hover {
   padding: 15px 10px;
 }
 
+.about-us .adv:hover .img img {
+  transform: rotate(360deg);
+}
+
 .about-us .adv .img {
   position: relative;
   padding: 15px;
@@ -557,7 +565,7 @@ header .sm-navbar .container .menu-container ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #28af60;
+  background-color: #377fc3;
 }
 
 .about-us .adv .img:before {
@@ -573,6 +581,7 @@ header .sm-navbar .container .menu-container ul li a:hover {
 
 .about-us .adv .img img {
   width: 30px;
+  transition: 0.5s ease-in-out;
 }
 
 .about-us .adv .caption p {
@@ -618,10 +627,24 @@ header .sm-navbar .container .menu-container ul li a:hover {
 }
 
 .our-work .flip-card .inner .back {
-  background-color: #054c8f;
+  background-color: #f8f8f8;
   padding: 15px;
-  color: #fff;
+  color: #054c8f;
   transform: rotateY(180deg);
+  border: 3px solid #c2c2c2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-work .flip-card .inner .back h4 {
+  font-weight: 600;
+}
+
+.our-work .flip-card .inner .back p {
+  color: #212529;
 }
 
 .our-work .flip-card:hover .inner {
@@ -658,12 +681,12 @@ header .sm-navbar .container .menu-container ul li a:hover {
 .our-work.projects::before {
   content: "";
   position: absolute;
-  top: 25%;
-  right: 0;
-  left: 0;
-  height: 50%;
-  background-color: #054c8f;
-  transform: rotate(-45deg);
+  top: -200%;
+  height: 500%;
+  width: 30%;
+  left: 52%;
+  background-image: linear-gradient(100deg, #377fc3 9%, #054c8f 100%) !important;
+  transform: rotate(45deg) translateX(-50%);
 }
 
 .gallery {
@@ -734,13 +757,13 @@ header .sm-navbar .container .menu-container ul li a:hover {
 }
 
 .services .service {
-  overflow: hidden;
-  transition: 0.3s;
   background-color: #fff;
   color: #212529;
   padding: 20px 30px;
   border: 2px solid #eee;
-  box-shadow: 2px 4px rgba(100, 69, 73, 0.09);
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.05), -1px -2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .services .service .head {
@@ -767,16 +790,17 @@ header .sm-navbar .container .menu-container ul li a:hover {
 }
 
 .services .service:hover {
-  background-color: #fff;
+  box-shadow: none;
 }
 
 .services .service:hover span {
   color: #fff;
-  background-color: #28af60;
+  background-color: #377fc3;
+  transform: scale(1.1);
 }
 
 .services .service:hover h4 {
-  color: #28af60;
+  color: #377fc3;
 }
 
 .contact h2 {
@@ -791,6 +815,20 @@ header .sm-navbar .container .menu-container ul li a:hover {
 .contact .form-container .form {
   width: 85%;
   margin: auto;
+}
+
+.contact .form-container .form .more-btn {
+  background-color: #054c8f;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  font-weight: 500;
+}
+
+.contact .form-container .form .more-btn:hover {
+  background-color: #fff;
+  color: #212529;
+  border-color: transparent;
 }
 
 .contact .form-container .form .form-head {
@@ -1242,7 +1280,7 @@ footer .about p {
 }
 
 footer .info li span {
-  color: #28af60;
+  color: #377fc3;
   margin-right: 5px;
 }
 
