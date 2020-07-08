@@ -9,11 +9,11 @@
       <div class="carousel-inner">
         <div class="carousel-item active" style="background-image: url( https://i.ibb.co/71LR77z/DSC-1287-min.jpg );"> </div>
 
-        <div class="carousel-item" style="background-image: url( {{asset('/images/DSC_1283-min.jpg')}} );"> </div>
+        <div class="carousel-item" style="background-image: url( https://serving.photos.photobox.com/71655041f0efb2ef0b680be8ec3fc0db5f878458fc5036afbafd4430c0ec670d6ca4d3f3.jpg );"> </div>
 
-        <div class="carousel-item" style="background-image: url( {{asset('/images/DSC_1261-min.jpg')}} );"> </div>
+        <div class="carousel-item" style="background-image: url( https://i.ibb.co/KGSKj0t/DSC-1261-min.jpg );"> </div>
 
-        <div class="carousel-item" style="background-image: url( {{asset('/images/DSC_1268-min.jpg')}} );"> </div>
+        <div class="carousel-item" style="background-image: url( https://serving.photos.photobox.com/484210358d105496ca2788a9a61c900648c4aa5c8d59cc4c663621cd7da4aebfe503fdec.jpg );"> </div>
       </div>
 
       <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
@@ -58,7 +58,7 @@
         <div class="col-lg-4 col-md-6 mb-3">
           <div class="adv">
             <div class='img'>
-              <img loading="lazy" src="{{asset('/images/Bus.svg')}}" alt="">
+              <img loading="lazy" src="https://svgur.com/i/Mgp.svg" alt="">
             </div>
             <div class="caption">
               <h5>Comfortable transportation</h5>
@@ -100,15 +100,15 @@
           <div class="images first">
             <div class="full-w-img">
               <div class="img-container">
-                <img loading="lazy" src="{{asset('/images/DSC_1268-min.jpg')}}" class="img-fluid w-100" alt="">
+                <img loading="lazy" src="https://serving.photos.photobox.com/484210358d105496ca2788a9a61c900648c4aa5c8d59cc4c663621cd7da4aebfe503fdec.jpg" class="img-fluid w-100" alt="">
               </div>
             </div>
             <div class="two-imgs mb-3">
               <div class="img-container">
-                <img loading="lazy" src="{{asset('/images/DSC_1292-min.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://serving.photos.photobox.com/17257934a1f2c12c94cdadb14cf221b32049a0634e65de9e7652404697c9cc7f855f93d9.jpg" class="img-fluid" alt="">
               </div>
               <div class="img-container">
-                <img loading="lazy" src="{{asset('/images/DSC_1297-min.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://serving.photos.photobox.com/466214861cf97611f5e0b81b35d5b2baef2c5aac482ebab6d79944df5a67e9d13684e455.jpg" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -117,15 +117,15 @@
           <div class="images last">
             <div class="two-imgs">
               <div class="img-container">
-                <img loading="lazy" src="{{asset('/images/DSC_1280-min.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://serving.photos.photobox.com/85604215a2f039564a7d413c9236f0afab08a8d2410cbd65e1374c0f26d4ec2052b17c3c.jpg" class="img-fluid" alt="">
               </div>
               <div class="img-container">
-                <img loading="lazy" src="{{asset('/images/DSC_1283-min.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://serving.photos.photobox.com/7427260647140ae17ea36be6c8db0f57c7915720e6726682b5c8fda14b7df788ac43bc94.jpg" class="img-fluid" alt="">
               </div>
             </div>
             <div class="full-w-img">
               <div class="img-container">
-                <img loading="lazy" src="{{asset('/images/DSC_1261-min.jpg')}}" class="img-fluid w-100" alt="">
+                <img loading="lazy" src="https://i.ibb.co/mBgNCDn/DSC-1261-min.jpg" class="img-fluid w-100" alt="">
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
           <div class="project flip-card">
             <div class="inner">
               <div class="front">
-                <img loading="lazy" src="{{asset('/images/DSC_1292-min.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://serving.photos.photobox.com/17257934a1f2c12c94cdadb14cf221b32049a0634e65de9e7652404697c9cc7f855f93d9.jpg" class="img-fluid" alt="">
               </div>
               <div class="back">
                 <h4>Dummy Title</h4>
@@ -161,7 +161,7 @@
           <div class="project flip-card">
             <div class="inner">
               <div class="front">
-                <img loading="lazy" src="{{asset('/images/DSC_1250-min.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://i.ibb.co/3hLctCH/DSC-1250-min.jpg" class="img-fluid" alt="">
               </div>
               <div class="back">
                 <h4>Dummy Title</h4>
@@ -177,7 +177,7 @@
           <div class="project flip-card">
             <div class="inner">
               <div class="front">
-                <img loading="lazy" src="{{asset('/images/DSC_1257-min.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="https://i.ibb.co/zGrcrSk/DSC-1257-min.jpg" class="img-fluid" alt="">
               </div>
               <div class="back">
                 <h4>Dummy Title</h4>
@@ -229,7 +229,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <img loading="lazy" src="{{asset('/images/DSC_1250-min.jpg')}}" class="img-fluid" alt="">
+            <img loading="lazy" src="https://i.ibb.co/3hLctCH/DSC-1250-min.jpg" class="img-fluid" alt="">
             <h3>Project Title</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptatem harum minus minima officiis exercitationem numquam quam incidunt, rem similique nostrum unde odit nobis quo impedit fugit nulla facere, porro iure autem praesentium voluptas corrupti sequi. Beatae voluptatem molestias, laboriosam rem quidem omnis illo ex necessitatibus eum accusantium quod culpa quam autem quasi? Incidunt, dignissimos. Perferendis quisquam, facilis dolor praesentium amet natus in porro voluptatum. Doloremque, tempora, iusto earum deserunt corrupti, in laborum eaque ipsa repellat fuga voluptatem harum accusantium.</p>
           </div>
