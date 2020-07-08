@@ -7,7 +7,7 @@
   <section class="slider">
     <div id="carouselFade" data-pause="false" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url( {{asset('/images/DSC_1287-min.jpg')}} );"> </div>
+        <div class="carousel-item active" style="background-image: url( https://i.ibb.co/71LR77z/DSC-1287-min.jpg );"> </div>
 
         <div class="carousel-item" style="background-image: url( {{asset('/images/DSC_1283-min.jpg')}} );"> </div>
 
@@ -15,7 +15,7 @@
 
         <div class="carousel-item" style="background-image: url( {{asset('/images/DSC_1268-min.jpg')}} );"> </div>
       </div>
-      
+
       <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -169,7 +169,7 @@
                 <!-- Launch Modal Button -->
                 <button class="more-btn" data-toggle="modal" data-target="#project_modal_2">Read More</button>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
 
@@ -270,7 +270,7 @@
 
 
           <div class="slider-wrapper">
-            
+
             <div class="rotatescroll" id="rotatescroll">
 
               <div class="viewport">
@@ -435,7 +435,7 @@
 @endsection
 
 
-<!-- 
+<!--
   <i class="fas fa-bus-alt"></i>
   <i class="fas fa-cogs"></i>
   <i class="fas fa-globe-africa"></i>
